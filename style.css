@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img{
+    margin-left: 550px;
+    margin-top: 50px;
+    border: solid 5px #080808;
+    animation: floatImages 4s ease-in-out infinite;
+    
+    
+}
+body{
+    background-color: pink;
+}
+.grade{
+    margin-left: 800px;
+    margin-top: 30px;
+    font-style: italic;
+    color: red;
+    animation: slideRight 1s ease forwards;
+}
+.description{
+    margin-left: 320px;
+    margin-top: 45px;
+    font-size: 30px;
+    animation: slideLeft 1s ease forwards;
+}
+
+.members{
+    margin-top: 30px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.members1{
+    margin-top: 30px;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+
+
+@keyframes floatImages{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+
